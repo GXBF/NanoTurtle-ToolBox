@@ -1,0 +1,40 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"> <!-- 垂直居中 -->
+
+        <TextView
+            android:id="@+id/textDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Dashboard Text" />
+
+
+        <Button
+            android:id="@+id/buttonGallery"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="打开开发者选项" />
+
+
+        <Button
+            android:id="@+id/buttonSelftest"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="打开自检" />
+
+        <Button
+            android:id="@+id/buttonadb"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="打开adb【root】" />
+        <!-- 其他视图和组件 -->
+
+    </LinearLayout>
+
+</ScrollView>

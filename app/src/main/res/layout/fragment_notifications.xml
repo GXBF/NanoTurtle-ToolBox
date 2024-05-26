@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <TextView
+        android:id="@+id/logTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="8dp"
+        android:scrollbars="vertical"
+        android:text="开发日志\n\n- 2024-5-26: 0.0.5发布;改用shell命令打开不是公开的Activity。\n- 2024-5-?: 尽请期待。"/>
+
+</ScrollView>

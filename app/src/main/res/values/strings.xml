@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NanoTurtle的百宝箱</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">打开隐藏活动</string>
+    <string name="title_notifications">通知</string>
+    <string name="title_logs">开发日志</string>
+</resources>
