@@ -57,8 +57,8 @@
         <TextView
             android:id="@+id/textdd"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:text="Dashboard Text" />
+            android:layout_height="75dp"
+            android:text="我也是有底线的~" />
 
     </LinearLayout>
 

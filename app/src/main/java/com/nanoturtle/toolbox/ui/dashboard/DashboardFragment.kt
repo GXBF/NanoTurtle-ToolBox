@@ -44,6 +44,9 @@ class DashboardFragment : Fragment() {
         val buttonGallery: Button = binding.buttonGallery
         val buttonSelfTest: Button = binding.buttonSelftest
         val buttonadb: Button = binding.buttonadb
+        val buttonsrf: Button = binding.buttonsrf
+        val buttongjsz: Button = binding.buttongjsz
+        val buttonllq: Button = binding.buttonllq
         // 监听DashBoard按下按钮的代码
         //例子：
         /*
@@ -144,6 +147,66 @@ class DashboardFragment : Fragment() {
             }
         }
 
+
+        buttonsrf.setOnClickListener {
+            // Shell命令来启动Activity，但通常不会工作，因为需要root权限
+            val command = "am start -n com.baidu.input.xtcime/com.baidu.input.xtcime.demo.SettingActivity"
+            try {
+                val process = Runtime.getRuntime().exec("su -c $command") // 'su' 通常用于root权限
+                val inputStream = process.inputStream
+                val reader = BufferedReader(InputStreamReader(inputStream))
+                var line: String?
+                //while ((line = reader.readLine()) != null) {
+                // 输出命令执行的结果，通常用于调试
+                //Log.d("ShellCommand", line)
+                //}
+                reader.close()
+            } catch (e: IOException) {
+                // 处理IO异常
+                e.printStackTrace()
+                Toast.makeText(requireContext(), "执行Shell命令出错", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        buttongjsz.setOnClickListener {
+            // Shell命令来启动Activity，但通常不会工作，因为需要root权限
+            val command = "am start -n com.xtc.selftest/com.xtc.selftest.settings.ControlSettingsActivity"
+            try {
+                val process = Runtime.getRuntime().exec("su -c $command") // 'su' 通常用于root权限
+                val inputStream = process.inputStream
+                val reader = BufferedReader(InputStreamReader(inputStream))
+                var line: String?
+                //while ((line = reader.readLine()) != null) {
+                // 输出命令执行的结果，通常用于调试
+                //Log.d("ShellCommand", line)
+                //}
+                reader.close()
+            } catch (e: IOException) {
+                // 处理IO异常
+                e.printStackTrace()
+                Toast.makeText(requireContext(), "执行Shell命令出错", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        buttonllq.setOnClickListener {
+            // Shell命令来启动Activity，但通常不会工作，因为需要root权限
+            val command = "am start -n com.xtc.setting/com.xtc.setting.module.secretcode.view.activity.WebBrowserActivity"
+            try {
+                val process = Runtime.getRuntime().exec("su -c $command") // 'su' 通常用于root权限
+                val inputStream = process.inputStream
+                val reader = BufferedReader(InputStreamReader(inputStream))
+                var line: String?
+                //while ((line = reader.readLine()) != null) {
+                // 输出命令执行的结果，通常用于调试
+                //Log.d("ShellCommand", line)
+                //}
+                reader.close()
+            } catch (e: IOException) {
+                // 处理IO异常
+                e.printStackTrace()
+                Toast.makeText(requireContext(), "执行Shell命令出错", Toast.LENGTH_SHORT).show()
+            }
+        }
         return root
     }
 
