@@ -12,7 +12,7 @@
             android:id="@+id/textDashboard"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:text="Dashboard Text" />
+            android:text="这里可以打开小天才隐藏的Activity。但是只有少部分可以免root打开，其他均需root。建议您root完再使用本功能！" />
 
 
         <Button

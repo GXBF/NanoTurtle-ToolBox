@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class DashboardViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "由于这段删了会死，所以我不删了😭"
+        value = "这里可以打开小天才隐藏的Activity。但是只有少部分可以免root打开，其他均需root。建议您root完再使用本功能！"
     }
     val text: LiveData<String> = _text
 }
