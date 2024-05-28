@@ -32,8 +32,33 @@
             android:id="@+id/buttonadb"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:text="打开adb【root】" />
-        <!-- 其他视图和组件 -->
+            android:text="打开adb" />
+
+        <Button
+            android:id="@+id/buttonsrf"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="切换输入法" />
+
+        <Button
+            android:id="@+id/buttongjsz"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="打开高级设置" />
+
+        <Button
+            android:id="@+id/buttonllq"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="打开内置浏览器" />
+
+
+
+        <TextView
+            android:id="@+id/textdd"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Dashboard Text" />
 
     </LinearLayout>
 
